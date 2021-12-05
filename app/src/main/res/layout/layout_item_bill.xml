@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light">
+
+        <ImageButton
+            android:id="@+id/btnDeleteBill"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="260dp"
+            android:layout_toRightOf="@id/avatar_bill"
+            android:background="@color/white"
+            app:srcCompat="@drawable/x6_close" />
+
+        <ImageView
+            android:id="@+id/avatar_bill"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bo_tron"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tenmon_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar_bill"
+            android:text="Tên món"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/giatien_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gia tiền"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tenmon_bill"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/avatar_bill"/>
+
+        <ImageView
+            android:id="@+id/ghichu_bill"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/giatien_bill"
+            android:layout_toRightOf="@+id/avatar_bill"
+            app:srcCompat="@drawable/x5" />
+        <TextView
+            android:id="@+id/ghichutext_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú ..."
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/giatien_bill"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/ghichu_bill"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
